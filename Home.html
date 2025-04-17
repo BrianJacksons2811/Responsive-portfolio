@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device=width,  initial-scale=1.0">
+       <link rel="stylesheet" href="Styles.css">
+       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <title>My portfolio</title>
+    </head>
+    <body>
+      <div class="nav-bar">
+        <h1 href="Home.html">Brian <span>Mkhwanazi</span></h1>
+        <div class="nav-list">
+            <ul>
+                <li href="#">Home</li>
+                <li href="#">About</li>
+                <li href="#skills">Skills</li>
+                <li><a href="contact">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+          <div class="list">
+              <li>Home</li>
+              <li>About</li>
+              <li>Skills</li>
+              <li>Book Now</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <div class="content">
+        <div class="image">
+          <img src="./Images/Me.jpg">
+        </div>
+        <div class="content-main">
+          <h1>I'm <span>Brian</span> Mkhwanazi</h1>
+            <h2> I'm a
+            <span style="--i:4" data-text="Web developer">Web developer</span>
+            <span style="--i:3" data-text="UI/UX Designer">UX/UI Designer</span>
+            <span style="--i:2" data-text="Graphic">Graphic Designer</span>
+          </h2>
+          <p>I'm a passionate Front-End Developer with a keen eye for design and a strong focus on creating responsive, user-friendly, and high-performance websites. With expertise in HTML, CSS, JavaScript, and modern frameworks like React and Vue.js, I transform ideas into visually appealing and functional web experiences. I specialize in building clean, accessible, and optimized UI/UX designs that enhance user engagement. Whether it's developing interactive interfaces, improving website performance, or crafting seamless animations, I thrive on bringing digital experiences to life. Explore my projects below to see my work in action!</p>
+          <a href="#" class="btn" href="./docs/Updated_Dzunisani_Brian_Mkhwanazi_CV.docx" target="_blank">download CV</a>
+                <div class="btn-links">
+                    <a href="https://github.com/BrianJacksons2811" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://www.linkedin.com/in/dzunisani-brian-mkhwanazi-035922179/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+                <div class="hire-btn">
+                  <a href="#" target="_blank">Hire Me<i class='bx bxs-right-arrow-alt' ></i></i></a>
+                </div>
+              </div>
+        </div>
+      </div>
+      </div>
+      <div class="skills-page">
+        <div class="heading">
+          <h3 id="#skills">My Skills</h3>
+          <div class="content-skills">
+            <ul>
+              <li>🌐 HTML5, CSS3, JavaScript</li>
+              <li>⚛️ React.js, Vue.js</li>
+              <li>🎨 UI/UX Design (Figma, Adobe XD,Canva)</li>
+              <li>📱 Responsive Web Design</li>
+              <li>💡 jQuery & DOM Manipulation</li>
+              <li>🧠 Git & GitHub</li>
+              <li>🎬 CSS Animations & Transitions</li>
+              <li>🧰 Bootstrap & Tailwind CSS</li>
+              <li>🎭 Graphic Design (Photoshop, Illustrator)</li>
+              <li>🧪 Basic SEO & Web Performance</li>
+              <li>🚀Currently learning Node.js & backend development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="contact-page">
+        <div class="form-heading">
+          <h3 id="#contact">Book Now</h3>
+          <div class="contact-form">
+            <form id="contact-form">
+              <label for="First-name">First Name</label>
+              <input type="text" id="name" name="First-name" placeholder="Enter Your First Name" required="">
+            
+          
+              <label for="Last-name">Last Name</label>
+              <input type="text" id="name" name="Last-name" placeholder="Enter Your Last Name" required="">
+            
+            
+              <label for="Email">Email</label>
+              <input type="email" id="Email" name="Email" placeholder="Email Address" required="">
+            
+            
+              <label for="Cell-Number">Cell</label>
+              <input type="text" id="Cell-Number" name="Cell number" placeholder="Contact Number" required="">
+              <span id="cell-warning" style="color: red; display: none; font-size: 14px;">
+                ⚠️ Cell number should contain only digits.</span>
+              <label for="bio">Message</label>
+                <textarea id="Message" name="bio" rows="3" cols="30" placeholder="Message..." required=""></textarea>
+            
+            <div class="Submit-btn">
+              <input type="submit" href="#" value="Submit">
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-skills">
+      <div class="carousel-moving">
+        <span><i class='bx bxl-html5'></i>HTML</span>
+        <span><i class='bx bxl-css3'></i>CSS</span>
+        <span><i class='bx bxl-javascript'></i>JavaScript</span>
+        <span><i class='bx bxl-react'></i>React</span>
+        <span><i class='bx bxl-jquery'></i> jQuery</span>
+        <span><i class='bx bxl-nodejs'></i>Node.js</span>
+        <span><i class='bx bxl-figma'></i> Figma</span>
+        <span><i class='bx bx-paint'></i> UI/UX</span>
+        <span><i class='bx bxl-github'></i>GitHub</span>
+        <span><i class='bx bxl-git'></i> Git</span>
+        <span><i class='bx bxl-adobe'></i>Photoshop</span>
+        <span><i class='bx bx-vector'></i>Canva</span>
+      </div>
+      </div>
+      <script src="index.js">js</script>
+    </body>
+    <footer class="footer">
+      <p>&copy; 2025 Brian Mkhwanazi. All rights reserved.</p>
+    </footer>
+</html>
