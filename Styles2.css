@@ -11,6 +11,15 @@
 body{
     color: aliceblue;
 }
+.fade-in {
+  opacity: 1;
+  transition: 5s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .container1 .heading-container h1{
     background: linear-gradient(to bottom right, #10e23d, #02cbfd);
