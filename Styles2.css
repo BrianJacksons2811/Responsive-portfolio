@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',Arial, Helvetica, sans-serif;
+    background-color: #272727;
+}
+
+body{
+    color: aliceblue;
+}
+
+.container1 .heading-container h1{
+    background: linear-gradient(to bottom right, #10e23d, #02cbfd);
+    width: 100%;
+    height: 30vh;
+    color: #272727;
+    text-align: center;
+    padding-top: 90px;
+    font-size: 40PX;
+}
+
+.contact-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items:start;
+    gap: 1rem;
+    margin: 50px;
+}
+
+.contact-dtl{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding-left:460px;
+  }
+
+ .contact-dtl .address h2 {
+    padding: 10px 0 10px 0;
+  }
+
+  .contact-dtl .Cell-number h2{
+    padding: 10px 0 10px 0;
+  }
+
+  .contact-dtl .Email-address h2,p{
+    padding: 10px 0 10px 0;
+  }
+.contact-content form{
+    color: aliceblue;
+    justify-items: flex-start;
+    border: 1px solid #10e23d;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    margin-left: 160px;
+    padding: 20px;
+    width: 50%;
+  }
+  
+  label ,input,
+  textarea{
+    display: inline-flex;
+    background-color: transparent;
+    color: #ffffff;
+    width: 50%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+  }
+  
+  input ,textarea{
+    border:2px solid #858585;
+    border-radius: 20px;
+  }
+  
+  .Submit-btn input{
+    align-self: flex-start;
+      width: 100%;
+      background-color: #858585;
+      margin: 10px;
+      cursor: pointer;
+  }
+
+  hr{
+    width: 50%;
+    height: 2px;
+    background:#000000;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #10e23d 0%, transparent 50%, #707070 100%);
+  }
+
+  /*footer styling*/
+
+.footer {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #0a0a0a;
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 60px;
+    border-top: 1px solid #222;
+  }
+  
+  .footer p {
+    background-color: transparent;
+    margin: 0;
+    font-style: italic;
+    letter-spacing: 0.5px;
+  }
+  
+
+
