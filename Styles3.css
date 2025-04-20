@@ -20,6 +20,7 @@ body{
     text-align: center;
     padding-top: 90px;
     font-size: 40PX;
+    cursor:pointer;
   }
 
  .image img{
