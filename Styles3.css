@@ -28,3 +28,33 @@ body{
     margin-top: 40px;
     margin-left: 60px;
  }
+.resume{
+    padding: 4% 30% 10%;
+
+ }
+
+ .resume p{
+    background-color: rgb(64, 65, 65);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid rgb(0, 255, 0);
+ }
+
+ /*footer styling*/
+
+.footer {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #0a0a0a;
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 60px;
+    border-top: 1px solid #222;
+  }
+  
+  .footer p {
+    background-color: transparent;
+    margin: 0;
+    font-style: italic;
+    letter-spacing: 0.5px;
+  }
