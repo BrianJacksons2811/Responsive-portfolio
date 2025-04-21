@@ -25,3 +25,15 @@ function rotateRoles() {
     roleIndex = (roleIndex + 1) % roles.length;
 }
 setInterval(rotateRoles, 2500);
+// Fade in body on load
+window.addEventListener("load", () => {
+  document.body.classList.add("fade-in");
+
+  // Animate content-main items one by one
+  const elements = document.querySelectorAll(".content-main h1, .content-main h2, .content-main p, .btn, .btn-links, .hire-btn");
+  elements.forEach((el, i) => {
+    setTimeout(() => {
+      el.classList.add("show");
+    }, i * 200); // Delay each element
+  });
+});
