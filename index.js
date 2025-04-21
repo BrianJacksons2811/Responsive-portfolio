@@ -1,3 +1,32 @@
+const typewriterText = document.getElementById("typewriter-text");
+const roles = ["Web Developer", "UI/UX Designer", "Graphic Designer"];
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function type() {
+  const currentRole = roles[roleIndex];
+  const currentText = currentRole.substring(0, charIndex);
+
+  typewriterText.textContent = currentText;
+
+  if (!isDeleting && charIndex < currentRole.length) {
+    charIndex++;
+    setTimeout(type, 100);
+  } else if (isDeleting && charIndex > 0) {
+    charIndex--;
+    setTimeout(type, 50);
+  } else {
+    isDeleting = !isDeleting;
+    if (!isDeleting) {
+      roleIndex = (roleIndex + 1) % roles.length;
+    }
+    setTimeout(type, 1000);
+  }
+}
+
+type(); 
+
 // Fade in body on load
 window.addEventListener("load", () => {
   document.body.classList.add("fade-in");
