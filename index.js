@@ -11,39 +11,22 @@ window.addEventListener("load", () => {
   });
 });
 
-//submition message//
-document.getElementById("contact-form").addEventListener("submit", function (e) {
-  e.preventDefault(); 
-  alert("✅ Message sent successfully! I’ll get back to you soon.");
-  this.reset(); 
+// Validate cell number to allow only digits
+document.getElementById("Cell-Number").addEventListener("input", function () {
+    const warning = document.getElementById("cell-warning");
+    const value = this.value;
+    if (!/^\d*$/.test(value)) {
+        warning.style.display = "inline";
+    } else {
+        warning.style.display = "none";
+    }
 });
 
-//warnings//
+// Dropdown navigation toggle (if you plan to use it on smaller screens)
+document.querySelector('.dropdown')?.addEventListener("click", () => {
+    document.querySelector('.nav-list ul').classList.toggle("show");
+});
 
-const cellInput = document.getElementById("cell");
-  const warning = document.getElementById("cell-warning");
-
-  cellInput.addEventListener("input", function () {
-    const onlyNumbers = /^\d*$/;
-
-    if (!onlyNumbers.test(cellInput.value)) {
-      warning.style.display = "block";
-    } else {
-      warning.style.display = "none";
-    }
-  });
-
-  // Popup on submit
-  document.getElementById("contact-form").addEventListener("submit", function (e) {
-    e.preventDefault();
-    if (!/^\d+$/.test(cellInput.value)) {
-      alert("⚠️ Please enter a valid cell number with only digits.");
-      return;
-    }
-    alert("✅ Message sent successfully! I’ll get back to you soon.");
-    this.reset();
-    warning.style.display = "none";
-  });//
 // Typewriter-style animation cycling through roles (optional enhancement)
 const roles = ["Web developer", "UX/UI Designer", "Graphic Designer"];
 let roleIndex = 0;
