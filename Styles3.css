@@ -10,6 +10,8 @@
 /*nav bar styling*/
  .nav-list ul {
     display: flex;
+    right:20px;
+    justify-content: space-between;
     gap: 30px;
     list-style: none;
     margin: 0;
