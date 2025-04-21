@@ -384,3 +384,177 @@ input ,textarea{
 }
 
 
+/* ============================
+   RESPONSIVE DESIGN SECTION
+============================ */
+/* =====================
+    DESKTOP VIEW
+===================== */
+.menu-toggle,
+.dropdown {
+  display: none;
+}
+
+/* Tablets & smaller desktops */
+@media (max-width: 992px) {
+  .content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .content .image img {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .content-main h1 {
+    font-size: 40px;
+  }
+
+  .content-main h2 {
+    font-size: 28px;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .nav-list ul {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .carousel-moving span {
+    font-size: 26px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .content {
+    margin: 20px;
+  }
+
+  .content .image img {
+    width: 200px;
+    height: auto;
+  }
+
+  .content-main h1 {
+    font-size: 28px;
+  }
+
+  .content-main h2 {
+    font-size: 22px;
+  }
+
+  .btn {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .btn-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .btn-links a {
+    margin: 5px;
+  }
+
+  .hire-btn {
+    margin-top: 20px;
+  }
+
+  .skills-page .heading h3 {
+    font-size: 32px;
+  }
+
+  label,
+  input,
+  textarea {
+    width: 90%;
+  }
+
+  .carousel-moving span {
+    font-size: 18px;
+    margin: 0 15px;
+  }
+
+  .nav-bar h1 {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .nav-list ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 32px;
+    color: #10e23d;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    z-index: 998;
+    background: transparent; 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); 
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .dropdown.show {
+    display: block;
+  }
+
+  .dropdown .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dropdown .list li {
+    z-index: 100;
+    padding: 0px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    font-size: 18px;
+    color: #10e23d;
+    background-color: transparent;
+    transition: 0.3s ease;
+  }
+
+  .dropdown .list li:hover {
+    background-color: #10e23e67;
+  }
+  .dropdown .list li a {
+    text-decoration: none;
+    background-color: transparent;
+    color: #10e23d;
+    display: block;
+  }
+}
+
+
