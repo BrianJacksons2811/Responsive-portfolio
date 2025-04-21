@@ -1,3 +1,11 @@
+const menuToggle = document.getElementById('menu-toggle');
+const dropdownMenu = document.getElementById('dropdown-menu');
+
+menuToggle.addEventListener('click', () => {
+  dropdownMenu.classList.toggle('show');
+  
+});
+
 const typewriterText = document.getElementById("typewriter-text");
 const roles = ["Web Developer", "UI/UX Designer", "Graphic Designer"];
 let roleIndex = 0;
