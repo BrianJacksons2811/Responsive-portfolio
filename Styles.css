@@ -159,39 +159,25 @@ body{
 }
 
 
-.content-main h2 span{
-  position: relative;
-  display: inline-block;
-  color: transparent;
-  -webkit-text-stroke: .7px #10e23e79;
-  animation: display-text 16s linear infinite;
-  animation-delay: calc(-4s * var(--i));
+.typewriter-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #858585;
 }
 
-@keyframes display-text{
-  25%,100%{
-      display: none;
-  }
-}
-
-.content-main h2 span::before{
-  content: attr(data-text);
-  position: absolute;
-  width: 0;
-  border-right: 2px solid #10e23d;
+#typewriter-text {
   color: #10e23d;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: fill-text 4s linear infinite;
 }
 
-@keyframes fill-text{
-  10%, 100%{
-      width: 0;
-  }
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s steps(1) infinite;
+  color: #10e23d;
+}
 
-  70% ,90%{
-      width: 100%;
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
 a{
