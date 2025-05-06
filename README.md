@@ -26,7 +26,7 @@ This site showcases my work as a Front-End Developer and Designer, highlighting 
 
 ## 📎 Live Preview
 
-[View Live Website](https://github.com/BrianJacksons2811)
+[View Live Website](https://brianjacksons2811.github.io/Responsive-portfolio/)
 
 ---
 
